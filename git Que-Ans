@@ -1,0 +1,306 @@
+1.)* What is Version Control System(V.C.S.)?
+    A version control system vcs tracks changes to a file or set of files over time so that you can recall specific version later.
+    It allows you to work together with other programmers.
+
+
+2.)* Why we need any Version Control System(v.C.S)?
+     vcs keeps track of every modification to the code in a special kind of database. if a mistake is made, devlopers can turn back   the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members .    
+
+
+3.)* What is the difference between SVN and Git?
+     The biggest difference between Git vs Subversion (SVN) is that Git version control is distributed while SVN is centralized. 
+   
+	
+4.)* Which VCS you prefer? SVN Or Git? Why?
+     Git is better than SVN because it works well even for developers who aren’t always connected to the master repository,
+     as it is available offline. Branching and merging support are also thought to be superior with Git.
+  
+
+5.)* What are the advantages of Git over SVN?
+     The ability to work locally and offline is one major advantage to Git. SVN requires contributors to be connected to
+     the main repository server, which essentially eliminates working offline. 
+     Git also outperforms SVN when it comes to merging and conflict resolution.
+  
+6.) Why we call Git as Distributed VCS?
+   Git is a distributed version control system(VCS) that enables the developers to manage the changes offline and 
+   allows you to branch and merge whenever required, giving them full control over the local code base.
+   	
+
+7.) Can you explain Git's End-to-End work flow?
+   A centralized Git workflow enables all team members to make changes directly to the main branch sometimes called the master branch or default branch, with every change logged in a running history. A centralized workflow involves every contributor committing to the main branch without using any other branch.
+		    	 
+
+8.) How do you clone the code using git?
+   Open Git bash and change the current working directory to the location where you want the cloned directory. Type git clone in the terminal, paste the URL you copied earlier, and press “enter” to create your local clone.
+  	
+
+9.)* What is the difference between Commit & Push?
+    git commit saves repository changes on local but not remote repository.
+    Git push then updates your git commit changes and sends it to remote repository. 
+	  
+
+10.)* What is the difference bet'n Push and Pull?
+   git pull is one of many commands that claim the responsibility of 'syncing' remote content. The git remote command is used to specify what remote endpoints the syncing commands will operate on. The git push command is used to upload content to a remote repository. 
+	          
+
+11.) Can you explain Git architecture?
+Git uses a three-tree architecture. it still has the repository and the working copy, but in between is another tree, which is the staging index.Git has three main states that your files can reside in.. (Souce area) | ..(Stage) | .git (Local Repository.
+
+             
+12.)* What is the diff. bet'n Centralized and Distributed VCS?
+DVCS is faster than CVCS because you don't need to communicate with the remote server for each and every command. You do everything locally which gives you the benefit to work faster than CVCS. Working on branches is easy in DVCS.
+
+
+13.) Have you ever created Remote repositories in Git? How?
+yes,first make a one folder and create/initialize a local repository with 'git init' command,for push some data you have to create new repository on github server and it gives name same as it is folder and then we can create the remote repo by using git remote add repo name URL command.
+   
+	    
+14.) What happens if I delete .git folder?
+the . git folder does not delete the project files and folders. It just removes the functionality of Git from the project.	
+										     
+
+15.) How do you configure username, email and editor first time in Git?
+ Open the command line.
+ Set your username: git config --global user.name "FIRST_NAME LAST_NAME"
+ Set your email address: git config --global user.email "MY_NAME@example.com"
+	
+
+16.) Where Git stores configuration details?
+C:\Documents and Settings\All Users\Application Data\Git\config on Windows XP, and in C:\ProgramData\Git\config on Windows Vista and newer.
+
+	
+17.)* What is the advantage of STAGE in Git?
+A staging step in git allows you to continue making changes to the working directory, and when you decide you wanna interact with version control, it allows you to record changes in small commits.
+
+	
+
+18.) Git log options related questions
+What are the details of git log?
+What is git log used for?
+How to check git log history?
+What is the option to limit logs in git?
+
+19. What is SHA-1? How Git uses this?
+The SHA-1 name of an object is the SHA-1 of the concatenation of its type, length, a nul byte, and the object's SHA-1 content. This is the traditional <sha1> used in Git to name objects. The SHA-256 name of an object is the SHA-256 of the concatenation of its type, length, a nul byte, and the object's SHA-256 content.
+	
+   
+20.)* I have a file modified in my Working directory. How do you show the content diff?
+    The git diff file name command shows all the changes made between the working directory 
+     
+
+21.)* How do you show the content diff of a file which is staged?
+  git diff --staged . With the --staged option, git diff will compare your staged changes against the previous commit.
+
+    
+
+22.) How do you delete and rename a file in Git?
+$git -mv <old name> <new name> by using this command you can rename file
+$git rm <file name>   by using this command you can delete file.
+    
+23.)** What is your branching stratogy? OR Can you explain your release process/Stratogy?
+	master-release-feature
+	A release strategy is a document that defines the scope and goals of a release, as well as the roles, responsibilities, and activities involved. A release strategy can help you align your release objectives with your business needs, manage risks and dependencies, and communicate effectively with your stakeholders.				--
+    	
+
+24.)** What branching model you suggest for parellel development?
+feature branching or trunk based development — can help development teams move fast. It can orchestrate parallel development allowing developers to work on tasks simultaneously as part of a team. And parallel builds and testing ensure developers get the feedback they need quickly.
+    	
+
+25.) Developer fixes a bug. How do you take the change to production?
+Establish a standardized process
+Plan to quickly fix defects
+   	
+
+26.)** Explain defferent branching models that you have worked-on.
+    Trunk and release branching. Release branching creates a branch for the desired release candidate. ...
+Feature branching. Feature branching creates a branch to implement a new feature or user story in the project. ...	
+
+
+27.) Did you work on merging the code in Git?
+  yes
+  
+
+
+28.)* How do you merge the code in Git?
+Once you've identified conflicting sections, you can go in and fix up the merge to your liking. When you're ready to finish the merge, all you have to do is run git add on the conflicted file(s) to tell Git they're resolved. Then, you run a normal git commit to generate the merge commit.  
+   	
+    
+
+29.)* What is merge? 
+Merging code allows multiple software developers to integrate changes into their codebase. 
+
+	
+30.)*What is conflict? OR When do we get conflict?
+If two users modify the same file in source and target branches and if the same line has different content, git can't decide which user's code it has to take. we call this situation as conflict.
+A conflict arises when two separate branches have made edits to the same line in a file, or when a file has been deleted in one branch but edited in the other. Conflicts will most likely happen when working in a team environment.
+
+31.)* What is fast-forward merge in Git?
+ 	A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch. 
+	
+
+32.)* A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch. 
+	
+	
+33.)* How do you resolve the conflit in Git?
+ open file and make any necessary changes. After editing the file, we can use the git add a command to stage the new merged content. The final step is to create a new commit with the help of the git commit command. Git will create a new merge commit to finalize the merge
+	
+
+34.)* What kind of conflicts you have seen?
+
+	
+
+35.) Who resolves the conflicts?
+	
+	
+
+
+36.)** What is the difference between branch and tag? 
+
+	 
+
+37.) When do you create a branch and tag?
+	
+	
+
+38.) How do you create a branch and switch to that using single command?
+	
+	
+
+
+39.) What is HEAD pointer in Git? Where Git store HEAD info.
+	
+	
+
+40.) Can we store binary files in Git?
+	
+	
+
+
+41.) Can skip the staging? How? 
+
+	
+
+
+42.)* How do you list files/folders modified as part of a commit?
+	
+	
+
+
+43.)What is git revert?
+
+
+44.) How do you add ignore list for all users?
+
+	
+45.)* What are the different files you ignore in your project?
+	
+	
+
+
+46.) How to remove a committed change? Or can we remove?
+		
+
+47.) How do you lock the branch?
+	
+	
+
+48.) How do you clone the particular branch?
+
+	
+
+
+49.) How do you restore a deleted file? Or previous changes of a file?
+
+	
+
+
+50.) How do you list the diff. of a file between two different branches.
+
+		
+
+51.) How do you list the changes which are going to be fetched? 
+
+	
+
+52.) What is Git Stash?
+	
+										      -------------
+
+53.) How do you add a new remote to git? Or How do you attach your local repo with remote?
+	
+	
+
+
+54.) What is git ls-tree?
+	
+	
+
+
+55.) What is git cherry-pick?
+
+	
+
+56.) What is git fork?
+
+	
+
+57.) 
+	
+	
+
+58.) What is git squash ?
+
+	
+
+59.) what is difference between git fetch, pull and clone?
+	
+	
+
+60.) What are Git Hooks?
+	
+	
+
+61.) What are Git TAGs
+	
+	
+62.) What is Git alias?
+	
+63.) What is Git gc?
+	
+	
+64.) What is git gc --aggressive?
+	
+65.) What inside .git folder?
+
+	
+66.) What is a bare Git repository?
+
+	
+
+67.) What is a Git Remote Repository?
+	
+	
+68.) What is the Working Tree in Git?
+	
+	
+
+69.) Roles and Responsibility in GIT
+	
+70.) Which port is used by git?
+
+	
+71.) How to check all remote branches and how to get in locally
+
+	
+72.) How to merge two repositories in one repositories using command line.
+	
+73.) what is git bi-sect
+
+74.) what is git blob
+
+75.) what is git blame
+
+76.) what git web-hooks
+
+
+
